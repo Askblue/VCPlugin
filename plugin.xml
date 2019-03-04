@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="cordova-plugin-vcplugin" version="1.0.0">
+    <name>VCPlugin</name>
+
+    <description>A Cordova plugin that allows users to connect to ClearOne Video Conference platform.</description>
+    <license>MIT</license>
+
+    <keywords>cordova,clearone,video,conference</keywords>
+    <repo>https://github.com/Askblue/VCPlugin.git</repo>
+    <issue>https://github.com/Askblue/VCPlugin/issues</issue>
+
+    <engines>
+        <engine name="cordova" version=">=3.0.0"/>
+    </engines>
+
+    <js-module src="www/vcplugin.js" name="VCPlugin">
+        <clobbers target="window.plugins.VCPlugin" />
+    </js-module>
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="VCPlugin">
+                <param name="android-package" value="com.askblue.vcplugin"/>
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/VCPlugin.java" target-dir="src/com/askblue/cordova/plugin" />
+    </platform>
+</plugin>

@@ -1,0 +1,33 @@
+{
+  "name": "cordova-plugin-vcplugin",
+  "version": "1.0.0",
+  "description": "A Cordova plugin that allows users to connect to ClearOne Video Conference platform.",
+  "cordova": {
+    "id": "cordova-plugin-vcplugin",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+"
+  },
+  "keywords": [
+    "clearone",
+    "video",
+    "conference",
+    "cordova"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "author": "Askblue <info@askblue.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Askblue/VCPlugin/issues"
+  },
+  "homepage": "https://github.com/Askblue/VCPlugin/"
+}
