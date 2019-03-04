@@ -20,4 +20,5 @@ VCPlugin.install = function() {
   window.plugins.VCPlugin = new VCPlugin();
   return window.plugins.VCPlugin;
 };
+
 cordova.addConstructor(VCPlugin.install);
