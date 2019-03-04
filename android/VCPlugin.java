@@ -20,7 +20,7 @@ public class VCPlugin extends CordovaPlugin {
         callbackContext.error("\"" + action + "\" is not a recognized action.");
         return false;
       }
-      
+
       String serverName;
       String userMail;
       String passWord;
